@@ -14,11 +14,14 @@
         header {
             background: #35424a;
             color: #ffffff;
-            padding: 10px 0;
+            padding: 20px;
             text-align: center;
+            background-size: cover;
+            background-position: center;
         }
         h1 {
-            color: #ffffff; /* Change the color of the h1 to white */
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
         .container {
             width: 80%;
@@ -36,17 +39,26 @@
             margin-top: 20px;
         }
         .exercise-item {
+            display: flex;
+            flex-direction: column;  /* Stack the children vertically */
             margin: 10px 0;
             padding: 15px;
             border: 1px solid #e0e0e0;
             border-radius: 5px;
             background-color: #fafafa;
         }
+        .exercise-item img {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
         .exercise-item a {
             text-decoration: none;
             color: #35424a;
             transition: color 0.3s;
             font-weight: bold;
+            margin-bottom: 5px; /* Adds space below the exercise name */
         }
         .exercise-item a:hover {
             color: #e8491d;
@@ -61,6 +73,11 @@
         }
         button:hover {
             background-color: #e8491d;
+        }
+        .exercise-description {
+            margin-top: 5px;  /* Adds space between the exercise name and description */
+            color: #555;
+            line-height: 1.6; /* Optional: Adjusts line spacing for better readability */
         }
     </style>
 </head>
@@ -81,27 +98,32 @@
         <button onclick="toggleExercises()">Details</button>
         <div class="exercise-list" id="exerciseList">
             <div class="exercise-item">
+                <img src="https://cdn.pixabay.com/photo/2018/03/22/02/37/email-3249062_1280.png" alt="Email list thumbnail">
                 <a href="https://email-wsi4.onrender.com">Email list</a>
                 <p class="exercise-description">Description: Yêu cầu người dùng nhập vào email, tên và sau đó sẽ phản hồi thông tin người dùng.</p>
             </div>
             <div class="exercise-item">
+                <img src="https://cdn.pixabay.com/photo/2016/08/15/10/17/survey-1594962_1280.jpg" alt="Survey thumbnail">
                 <a href="https://surveyweb-ko6m.onrender.com">Survey</a>
                 <p class="exercise-description">Description: Tạo một ứng dụng đơn khảo sát.</p>
             </div>
             <div class="exercise-item">
+                <img src="https://cdn.pixabay.com/photo/2018/03/22/02/37/email-3249062_1280.png" alt="Email list update thumbnail">
                 <a href="https://connectionpool-q6t9.onrender.com">Email list (update)</a>
                 <p class="exercise-description">Description: Yêu cầu người dùng nhập vào email, tên và sau đó sẽ phản hồi thông tin người dùng. Khi người dùng đã tồn tại trong email list trước đó thì sẽ thông báo lỗi.</p>
             </div>
             <div class="exercise-item">
+                <img src="https://cdn.pixabay.com/photo/2015/12/07/14/11/shopping-cart-1080840_1280.jpg" alt="Shopping cart thumbnail">
                 <a href="https://cart-pllc.onrender.com">Shopping cart</a>
                 <p class="exercise-description">Description: Tạo một giỏ hàng.</p>
             </div>
             <div class="exercise-item">
+                <img src="https://cdn.pixabay.com/photo/2015/12/07/14/11/shopping-cart-1080840_1280.jpg" alt="SQL Gateway thumbnail">
                 <a href="https://sqlgateway-maji.onrender.com">SqlGateway</a>
                 <p class="exercise-description">Description: Ứng dụng cơ sở dữ liệu.</p>
             </div>
-
             <div class="exercise-item">
+                <img src="https://cdn.pixabay.com/photo/2018/08/10/15/39/email-3597088_1280.jpg" alt="JavaMail thumbnail">
                 <a href="https://studyingspace2.onrender.com/ch14/">JavaMail</a>
                 <p class="exercise-description">Description: Ứng dụng JavaMail.</p>
             </div>
